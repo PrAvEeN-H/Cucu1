@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="26" failures="0" name="com.runner.TestRunner" time="870.098" errors="2" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.6+10"/>
+    <property name="sun.boot.library.path" value="C:\Users\ADMIN\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\ADMIN\eclipse-workspace\OmrBranchHotelAutomation"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\ADMIN\eclipse-workspace\OmrBranchHotelAutomation"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="17.0.6+10"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMIN\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\ADMIN\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf2688673287742750905.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\ADMIN\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_351/bin/server;C:/Program Files/Java/jre1.8.0_351/bin;C:/Program Files/Java/jre1.8.0_351/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\apache-maven-3.9.1-bin\apache-maven-3.9.1\bin;C:\Program Files\Java\jdk1.8.0_351\bin;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;;C:\Users\ADMIN\Downloads\eclipse-jee-photon-R-win32-x86_64\eclipse;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\ADMIN"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="ADMIN"/>
+    <property name="java.class.path" value="C:\Users\ADMIN\Downloads\eclipse-jee-photon-R-win32-x86_64\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.9.0.20180606-2035\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.home" value="C:\Users\ADMIN\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="maven.home" value="C:\Users\ADMIN\eclipse-workspace\OmrBranchHotelAutomation\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-17.0.6+10"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Verifying OMRBranchLogin Automatuion" name="Verify login with valid credential" time="10.955"/>
+  <testcase classname="Verifying OMRBranchLogin Automatuion" name="Verify login using Enter key" time="6.431"/>
+  <testcase classname="Verifying OMRBranchLogin Automatuion" name="Verify login with invalid credential" time="5.984"/>
+  <testcase classname="verifying OMRBranch search hotel Automation" name="Verifying search hotel with all field" time="40.72"/>
+  <testcase classname="verifying OMRBranch search hotel Automation" name="Verifying search hotel with only mandatory fields" time="20.073"/>
+  <testcase classname="verifying OMRBranch search hotel Automation" name="Verifying search hotel without entering any feild" time="12.993"/>
+  <testcase classname="verifying OMRBranch search hotel Automation" name="Verifying search hotel filter room type" time="24.137"/>
+  <testcase classname="Verifying OMRBranch Select Hotel Automation" name="Verifying select hotel navigates to book hotel" time="28.209"/>
+  <testcase classname="Verifying OMRBranch Select Hotel Automation" name="Verifying select hotel navigates to same page upon dismissing alert" time="23.338"/>
+  <testcase classname="Verifying OMRBranch Select Hotel Automation" name="Verifying price low to high functionality under sort by" time="28.001"/>
+  <testcase classname="Verifying OMRBranch Select Hotel Automation" name="Verifying price high to low fuctionality under sort by" time="40.902"/>
+  <testcase classname="Verifying OMRBranch Select Hotel Automation" name="Verifying roomtype filter is displaying" time="47.937"/>
+  <testcase classname="Verifying OMRBranch Book Hotel Automation" name="Verifying book hotel with special request and gst using debit and credit card #1" time="41.147"/>
+  <testcase classname="Verifying OMRBranch Book Hotel Automation" name="Verifying book hotel with special request and gst using debit and credit card #2" time="80.45"/>
+  <testcase classname="Verifying OMRBranch Book Hotel Automation" name="Verifying book hotel without special request using debit and credit card #1" time="56.295"/>
+  <testcase classname="Verifying OMRBranch Book Hotel Automation" name="Verifying book hotel without special request using debit and credit card #2" time="46.076"/>
+  <testcase classname="Verifying OMRBranch Book Hotel Automation" name="Verifying book hotel without gst and with special request using debit card" time="42.099"/>
+  <testcase classname="Verifying OMRBranch Book Hotel Automation" name="Verifying book hotel without gst and without special request using credit card" time="45.724"/>
+  <testcase classname="Verifying OMRBranch Book Hotel Automation" name="Verifying Book hotel without entering any field" time="24.906">
+    <error message="Cannot locate option with text: Chennai
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Chennai
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at com.base.BaseClass.ddnSelectByTxt(BaseClass.java:141)
+	at com.pages.ExploreHotelPage.exploreHotel(ExploreHotelPage.java:243)
+	at com.stepdefenition.TC2_ExploreHotelStep.user_search_hotels_and(TC2_ExploreHotelStep.java:21)
+	at ✽.User search hotels &quot;Tamil Nadu&quot;,&quot;Chennai&quot;,&quot;Studio&quot;,&quot;2023-05-15&quot;,&quot;2023-05-22&quot;,&quot;2-Two&quot;,&quot;2-Two&quot; and &quot;1&quot;(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC4_BookHotel.feature:121)
+</error>
+    <system-out>
+@BookHotel
+Scenario Outline: Verifying Book hotel without entering any field                                                                                                                                                                                                                                                                                                                                  &amp;#27;[90m# src/test/resources/Features/TC4_BookHotel.feature:131&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser is on OMRBranch hotel page&amp;#27;[0m                                                                                                                                                                                                                                                                                                                                                            &amp;#27;[90m# com.stepdefenition.CommonSteps.user_is_on_omr_branch_hotel_page()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser enter &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;akashka888@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Akash@123&quot;&amp;#27;[0m                                                                                                                                                                                                                                                                                                                                           &amp;#27;[90m# com.stepdefenition.TC1_LoginStep.user_enter_and(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mUser should verify success message after login &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Welcome Akash&quot;&amp;#27;[0m                                                                                                                                                                                                                                                                                                                              &amp;#27;[90m# com.stepdefenition.CommonSteps.user_should_verify_success_message_after_login(java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mWhen &amp;#27;[0m&amp;#27;[31mUser search hotels &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;Tamil Nadu&quot;&amp;#27;[0m&amp;#27;[31m,&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;Chennai&quot;&amp;#27;[0m&amp;#27;[31m,&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;Studio&quot;&amp;#27;[0m&amp;#27;[31m,&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;2023-05-15&quot;&amp;#27;[0m&amp;#27;[31m,&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;2023-05-22&quot;&amp;#27;[0m&amp;#27;[31m,&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;2-Two&quot;&amp;#27;[0m&amp;#27;[31m,&amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;2-Two&quot;&amp;#27;[0m&amp;#27;[31m and &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;1&quot;&amp;#27;[0m                                                                                                                                                                                                                                                                                        &amp;#27;[90m# com.stepdefenition.TC2_ExploreHotelStep.user_search_hotels_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: Cannot locate option with text: Chennai
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at com.base.BaseClass.ddnSelectByTxt(BaseClass.java:141)
+	at com.pages.ExploreHotelPage.exploreHotel(ExploreHotelPage.java:243)
+	at com.stepdefenition.TC2_ExploreHotelStep.user_search_hotels_and(TC2_ExploreHotelStep.java:21)
+	at ✽.User search hotels &quot;Tamil Nadu&quot;,&quot;Chennai&quot;,&quot;Studio&quot;,&quot;2023-05-15&quot;,&quot;2023-05-22&quot;,&quot;2-Two&quot;,&quot;2-Two&quot; and &quot;1&quot;(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC4_BookHotel.feature:121)
+&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser should verify after search hotel success message &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Select Hotel&quot;&amp;#27;[0m                                                                                                                                                                                                                                                                                                                        &amp;#27;[90m# com.stepdefenition.TC2_ExploreHotelStep.user_should_verify_after_search_hotel_success_message(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser select first hotel and save the hotel name and price&amp;#27;[0m                                                                                                                                                                                                                                                                                                                                   &amp;#27;[90m# com.stepdefenition.TC3_SelectHotelStep.user_select_first_hotel_and_save_the_hotel_name_and_price()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser accept the alert message&amp;#27;[0m                                                                                                                                                                                                                                                                                                                                                                &amp;#27;[90m# com.stepdefenition.TC4_BookHotelStep.user_accept_the_alert_message()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser should verify after accepting the alert success message &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Book Hotel&quot;&amp;#27;[0m                                                                                                                                                                                                                                                                                                                   &amp;#27;[90m# com.stepdefenition.TC3_SelectHotelStep.user_should_verify_after_accepting_the_alert_success_message(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser book hotel without entering any feilds&amp;#27;[0m                                                                                                                                                                                                                                                                                                                                                 &amp;#27;[90m# com.stepdefenition.TC4_BookHotelStep.user_book_hotel_without_entering_any_feilds()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser should verify error message after booking &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Let us know for whom you are booking the hotel&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Please select Salutation of the user&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Please provide First Name of the user&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Please provide Last Name of the user&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Please provide Contact Number of the user to ease the communication (if required)&quot;&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Please provide Email ID of the user to ease the communication (if required)&quot;&amp;#27;[0m &amp;#27;[90m# com.stepdefenition.TC4_BookHotelStep.user_should_verify_error_message_after_booking_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+
+    Embedding Verifying Book hotel without entering any field [images/png 898675 bytes]
+
+</system-out>
+    <system-err>Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 41979
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 05, 2023 5:18:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 112
+</system-err>
+  </testcase>
+  <testcase classname="Verifying OMRBranch Change Booking Automation" name="Change booking using generated order id" time="6.192">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;wrapper&quot;]/header/div/div/div/div[2]/div/ul/li[3]/a&quot;}
+  (Session info: chrome=113.0.5672.129)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9dd52c8e3ae84d00385c9eab8fa4e0c6, findElement {using=xpath, value=//*[@id=&quot;wrapper&quot;]/header/div/div/div/div[2]/div/ul/li[3]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61583}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61583/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9dd52c8e3ae84d00385c9eab8fa4e0c6" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;wrapper&quot;]/header/div/div/div/div[2]/div/ul/li[3]/a&quot;}
+  (Session info: chrome=113.0.5672.129)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9dd52c8e3ae84d00385c9eab8fa4e0c6, findElement {using=xpath, value=//*[@id=&quot;wrapper&quot;]/header/div/div/div/div[2]/div/ul/li[3]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61583}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61583/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9dd52c8e3ae84d00385c9eab8fa4e0c6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.stepdefenition.CommonSteps.user_should_verify_success_message_after_login(CommonSteps.java:26)
+	at ✽.User should verify success message after login &quot;Welcome Akash&quot;(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC5_ChangeBooking.feature:7)
+</error>
+    <system-out>
+@ChangeBooking
+Scenario Outline: Change booking using generated order id                                                               &amp;#27;[90m# src/test/resources/Features/TC5_ChangeBooking.feature:35&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser is on OMRBranch hotel page&amp;#27;[0m                                                                                 &amp;#27;[90m# com.stepdefenition.CommonSteps.user_is_on_omr_branch_hotel_page()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser enter &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;akashka888@gmail.com&quot;&amp;#27;[0m&amp;#27;[32m and &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Akash@123&quot;&amp;#27;[0m                                                                &amp;#27;[90m# com.stepdefenition.TC1_LoginStep.user_enter_and(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mUser should verify success message after login &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;Welcome Akash&quot;&amp;#27;[0m                                                   &amp;#27;[90m# com.stepdefenition.CommonSteps.user_should_verify_success_message_after_login(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;wrapper&quot;]/header/div/div/div/div[2]/div/ul/li[3]/a&quot;}
+  (Session info: chrome=113.0.5672.129)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9dd52c8e3ae84d00385c9eab8fa4e0c6, findElement {using=xpath, value=//*[@id=&quot;wrapper&quot;]/header/div/div/div/div[2]/div/ul/li[3]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61583}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61583/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9dd52c8e3ae84d00385c9eab8fa4e0c6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.stepdefenition.CommonSteps.user_should_verify_success_message_after_login(CommonSteps.java:26)
+	at ✽.User should verify success message after login &quot;Welcome Akash&quot;(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC5_ChangeBooking.feature:7)
+&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser search hotels &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Tamil Nadu&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Chennai&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Studio&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;2023-05-15&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;2023-05-22&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;2-Two&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;2-Two&quot;&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;1&quot;&amp;#27;[0m             &amp;#27;[90m# com.stepdefenition.TC2_ExploreHotelStep.user_search_hotels_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser should verify after search hotel success message &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Select Hotel&quot;&amp;#27;[0m                                             &amp;#27;[90m# com.stepdefenition.TC2_ExploreHotelStep.user_should_verify_after_search_hotel_success_message(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser select first hotel and save the hotel name and price&amp;#27;[0m                                                        &amp;#27;[90m# com.stepdefenition.TC3_SelectHotelStep.user_select_first_hotel_and_save_the_hotel_name_and_price()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser accept the alert message&amp;#27;[0m                                                                                     &amp;#27;[90m# com.stepdefenition.TC4_BookHotelStep.user_accept_the_alert_message()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser should verify after accepting the alert success message &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Book Hotel&quot;&amp;#27;[0m                                        &amp;#27;[90m# com.stepdefenition.TC3_SelectHotelStep.user_should_verify_after_accepting_the_alert_success_message(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser add all guest details &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Mr.&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Akash&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;k a&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;8489608783&quot;&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;akashka888@gmail.com&quot;&amp;#27;[0m                           &amp;#27;[90m# com.stepdefenition.TC4_BookHotelStep.user_add_all_guest_details_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser add gst details &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;9043592058&quot;&amp;#27;[0m&amp;#27;[36m,&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Greens Tech OMR Branch&quot;&amp;#27;[0m&amp;#27;[36m and &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Thoraipakkam&quot;&amp;#27;[0m                                     &amp;#27;[90m# com.stepdefenition.TC4_BookHotelStep.user_add_gst_details_and(java.lang.String,java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser giving  special request &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Camp Fire&quot;&amp;#27;[0m                                                                          &amp;#27;[90m# com.stepdefenition.TC4_BookHotelStep.user_giving_special_request(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36muser proceed payment &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Debit Card&quot;&amp;#27;[0m                                                                                 &amp;#27;[90m# com.stepdefenition.TC4_BookHotelStep.user_proceed_payment(java.lang.String,io.cucumber.datatable.DataTable)&amp;#27;[0m
+    | SelecrtCard      | CardNumber       | NameOnCard | SelectMonth | SelectYear | Cvv |
+    | Debit Visa       | 5555555555552222 | Akash      | April       | 2025       | 233 |
+    | Debit Amex       | 5555555555552222 | Ram        | May         | 2025       | 233 |
+    | Debit Mastercard | 5555555555552222 | Raj        | June        | 2025       | 233 |
+    | Debit Discover   | 5555555555552222 | Mani       | July        | 2025       | 244 |
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser should verify success message after booking with card details &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Booking is Confirmed&quot;&amp;#27;[0m&amp;#27;[36m and saves the order id&amp;#27;[0m &amp;#27;[90m# com.stepdefenition.TC4_BookHotelStep.user_should_verify_success_message_after_booking_with_card_details_and_saves_the_order_id(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser should verify same selected hotel is booked&amp;#27;[0m                                                                  &amp;#27;[90m# com.stepdefenition.TC4_BookHotelStep.user_should_verify_same_selected_hotel_is_booked()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser navigates to my booking page&amp;#27;[0m                                                                                &amp;#27;[90m# com.stepdefenition.TC5_ChangeBookingStep.user_navigates_to_my_booking_page()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser should verify after navigating success message &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Bookings&quot;&amp;#27;[0m                                                   &amp;#27;[90m# com.stepdefenition.TC5_ChangeBookingStep.user_should_verify_after_navigating_success_message(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser enter the generated order id&amp;#27;[0m                                                                                &amp;#27;[90m# com.stepdefenition.TC5_ChangeBookingStep.user_enter_the_generated_order_id()&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser should verify same order id is displayed&amp;#27;[0m                                                                    &amp;#27;[90m# com.stepdefenition.TC5_ChangeBookingStep.user_should_verify_same_order_id_is_displayed()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser should verify same hotel name is displayed&amp;#27;[0m                                                                   &amp;#27;[90m# com.stepdefenition.TC5_ChangeBookingStep.user_should_verify_same_hotel_name_is_displayed()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mUser should verify same prize is displayed&amp;#27;[0m                                                                        &amp;#27;[90m# com.stepdefenition.TC5_ChangeBookingStep.user_should_verify_same_prize_is_displayed()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser edit the paticular booking details &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;2023-05-25&quot;&amp;#27;[0m                                                             &amp;#27;[90m# com.stepdefenition.TC5_ChangeBookingStep.user_edit_the_paticular_booking_details(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36muser should verify after edit success message &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Booking updated successfully&quot;&amp;#27;[0m                                     &amp;#27;[90m# com.stepdefenition.TC5_ChangeBookingStep.user_should_verify_after_edit_success_message(java.lang.String)&amp;#27;[0m
+
+    Embedding Change booking using generated order id [images/png 76285 bytes]
+
+</system-out>
+    <system-err>Starting ChromeDriver 113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912}) on port 25879
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 05, 2023 5:18:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 113, so returning the closest version found: 112
+</system-err>
+  </testcase>
+  <testcase classname="Verifying OMRBranch Change Booking Automation" name="Change booking for existing order id" time="34.889"/>
+  <testcase classname="Verifying OMRBranch Change Booking Automation" name="Change booking for first available order id" time="35.625"/>
+  <testcase classname="Verifying OMRBranch Cancel Booking Automation" name="Cancel booking of generated order id" time="58.105"/>
+  <testcase classname="Verifying OMRBranch Cancel Booking Automation" name="Cancel booking of existing order id" time="19.835"/>
+  <testcase classname="Verifying OMRBranch Cancel Booking Automation" name="Cancel the first available  order id" time="23.778"/>
+  <testcase classname="Verifying OMRBranch Cancel Booking Automation" name="Cancel generated order id after changing the booking" time="65.297"/>
+</testsuite>

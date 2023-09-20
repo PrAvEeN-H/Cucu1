@@ -1,0 +1,3541 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: Verifying OMRBranch Book Hotel Automation</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>OMRBranch Hotel Automation</td>
+      <td>26 May 2023, 19:06</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Verifying OMRBranch Book Hotel Automation</td>
+          <td      class="passed"    >92</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">92</td>
+
+          <td  class="passed"    >7</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td class="duration" data-value="266446810700">4:26.446</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Verifying OMRBranch Book Hotel Automation</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">38.599</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel with special request and gst using debit and credit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">4.488</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.741</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">2.272</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">17.230</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.096</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.384</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.426</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">3.657</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add gst details <span class="argument">&quot;9043592058&quot;</span>,<span class="argument">&quot;Greens Tech OMR Branch&quot;</span> and <span class="argument">&quot;Thoraipakkam&quot;</span></span>
+
+  <span class="lead-duration duration">0.894</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User giving  special request <span class="argument">&quot;Camp Fire&quot;</span></span>
+
+  <span class="lead-duration duration">2.459</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Debit Card&quot;</span></span>
+
+  <span class="lead-duration duration">2.756</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.140</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.041</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">40.083</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel with special request and gst using debit and credit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">4.743</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.640</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">1.388</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">18.970</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.082</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.229</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.602</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">3.298</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add gst details <span class="argument">&quot;9043592058&quot;</span>,<span class="argument">&quot;Greens Tech OMR Branch&quot;</span> and <span class="argument">&quot;Thoraipakkam&quot;</span></span>
+
+  <span class="lead-duration duration">0.954</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User giving  special request <span class="argument">&quot;Camp Fire&quot;</span></span>
+
+  <span class="lead-duration duration">2.388</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Credit Card&quot;</span></span>
+
+  <span class="lead-duration duration">3.603</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.116</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.039</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">40.266</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel without special request using debit and credit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">5.599</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.625</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">2.086</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">19.431</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.158</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.662</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.807</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">3.405</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add gst details <span class="argument">&quot;9043592058&quot;</span>,<span class="argument">&quot;Greens Tech OMR Branch&quot;</span> and <span class="argument">&quot;Thoraipakkam&quot;</span></span>
+
+  <span class="lead-duration duration">0.943</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add without special request with gst</span>
+
+  <span class="lead-duration duration">0.119</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Debit Card&quot;</span></span>
+
+  <span class="lead-duration duration">3.190</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.157</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.052</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">38.049</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel without special request using debit and credit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">5.415</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.689</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">1.897</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">17.903</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.065</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.327</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.242</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">3.478</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add gst details <span class="argument">&quot;9043592058&quot;</span>,<span class="argument">&quot;Greens Tech OMR Branch&quot;</span> and <span class="argument">&quot;Thoraipakkam&quot;</span></span>
+
+  <span class="lead-duration duration">1.052</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add without special request with gst</span>
+
+  <span class="lead-duration duration">0.184</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Credit Card&quot;</span></span>
+
+  <span class="lead-duration duration">3.558</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.192</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.035</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">43.018</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel without gst and with special request using debit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">6.045</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.634</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">2.915</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">20.649</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.054</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.210</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.283</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">3.534</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User giving  special request without gst <span class="argument">&quot;Camp Fire&quot;</span></span>
+
+  <span class="lead-duration duration">2.408</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Debit Card&quot;</span></span>
+
+  <span class="lead-duration duration">3.063</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.121</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.038</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">34.085</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel without gst and without special request using credit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">4.815</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.708</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">1.355</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">16.667</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.175</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.070</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">3.200</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user give without special request</span>
+
+  <span class="lead-duration duration">0.304</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Debit Card&quot;</span></span>
+
+  <span class="lead-duration duration">3.558</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.123</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.036</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">32.344</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying Book hotel without entering any field</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">5.555</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.637</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">2.520</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">19.317</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.049</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.243</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.039</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.104</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User book hotel without entering any feilds</span>
+
+  <span class="lead-duration duration">0.265</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify error message after booking <span class="argument">&quot;Let us know for whom you are booking the hotel&quot;</span>,<span class="argument">&quot;Please select Salutation of the user&quot;</span>,<span class="argument">&quot;Please provide First Name of the user&quot;</span>,<span class="argument">&quot;Please provide Last Name of the user&quot;</span>,<span class="argument">&quot;Please provide Contact Number of the user to ease the communication (if required)&quot;</span> and <span class="argument">&quot;Please provide Email ID of the user to ease the communication (if required)&quot;</span></span>
+
+  <span class="lead-duration duration">0.610</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

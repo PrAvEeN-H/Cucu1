@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: com.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 874.183 sec <<< FAILURE!
+Verifying Book hotel without entering any field(Verifying OMRBranch Book Hotel Automation)  Time elapsed: 24.906 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Chennai
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at com.base.BaseClass.ddnSelectByTxt(BaseClass.java:141)
+	at com.pages.ExploreHotelPage.exploreHotel(ExploreHotelPage.java:243)
+	at com.stepdefenition.TC2_ExploreHotelStep.user_search_hotels_and(TC2_ExploreHotelStep.java:21)
+	at ✽.User search hotels "Tamil Nadu","Chennai","Studio","2023-05-15","2023-05-22","2-Two","2-Two" and "1"(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC4_BookHotel.feature:121)
+
+Change booking using generated order id(Verifying OMRBranch Change Booking Automation)  Time elapsed: 6.192 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="wrapper"]/header/div/div/div/div[2]/div/ul/li[3]/a"}
+  (Session info: chrome=113.0.5672.129)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9dd52c8e3ae84d00385c9eab8fa4e0c6, findElement {using=xpath, value=//*[@id="wrapper"]/header/div/div/div/div[2]/div/ul/li[3]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61583}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61583/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9dd52c8e3ae84d00385c9eab8fa4e0c6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.getText(Unknown Source)
+	at com.stepdefenition.CommonSteps.user_should_verify_success_message_after_login(CommonSteps.java:26)
+	at ✽.User should verify success message after login "Welcome Akash"(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC5_ChangeBooking.feature:7)
+

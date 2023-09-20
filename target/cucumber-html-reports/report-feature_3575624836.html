@@ -1,0 +1,3793 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: Verifying OMRBranch Book Hotel Automation</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>OMRBranch Hotel Automation</td>
+      <td>26 May 2023, 16:57</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Verifying OMRBranch Book Hotel Automation</td>
+          <td      class="passed"    >80</td>
+          <td      class="failed"    >6</td>
+          <td     class="skipped"   >6</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">92</td>
+
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >6</td>
+          <td class="total">7</td>
+
+          <td class="duration" data-value="291127790200">4:51.127</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Verifying OMRBranch Book Hotel Automation</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">1:6.330</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel with special request and gst using debit and credit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">5.676</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.528</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">2.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">46.531</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.066</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.190</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.747</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">2.987</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add gst details <span class="argument">&quot;9043592058&quot;</span>,<span class="argument">&quot;Greens Tech OMR Branch&quot;</span> and <span class="argument">&quot;Thoraipakkam&quot;</span></span>
+
+  <span class="lead-duration duration">0.775</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User giving  special request <span class="argument">&quot;Camp Fire&quot;</span></span>
+
+  <span class="lead-duration duration">2.292</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Debit Card&quot;</span></span>
+
+  <span class="lead-duration duration">1.419</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.085</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@class=&quot;couppon-code&quot;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [534dd7cdef3ffbdffd6ae67d14a74692, findElement {using=xpath, value=//h2[@class=&quot;couppon-code&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64856/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 534dd7cdef3ffbdffd6ae67d14a74692
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.pages.BookingConformPage.txtExpectedSuccessMsgBookingIsConformed(BookingConformPage.java:134)
+	at com.stepdefenition.TC4_BookHotelStep.user_should_verify_success_message_after_booking_with_card_details_and_saves_the_order_id(TC4_BookHotelStep.java:35)
+	at &#10045;.User should verify success message after booking with card details &quot;Booking is Confirmed&quot; and saves the order id(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC4_BookHotel.feature:26)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">36.258</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel with special request and gst using debit and credit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">4.094</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.536</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">2.129</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">18.058</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.039</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.208</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.646</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">2.956</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add gst details <span class="argument">&quot;9043592058&quot;</span>,<span class="argument">&quot;Greens Tech OMR Branch&quot;</span> and <span class="argument">&quot;Thoraipakkam&quot;</span></span>
+
+  <span class="lead-duration duration">0.766</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User giving  special request <span class="argument">&quot;Camp Fire&quot;</span></span>
+
+  <span class="lead-duration duration">2.291</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Credit Card&quot;</span></span>
+
+  <span class="lead-duration duration">1.453</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.067</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@class=&quot;couppon-code&quot;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ac18252bbf72a1fec8587f5034c782b, findElement {using=xpath, value=//h2[@class=&quot;couppon-code&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64901}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64901/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ac18252bbf72a1fec8587f5034c782b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.pages.BookingConformPage.txtExpectedSuccessMsgBookingIsConformed(BookingConformPage.java:134)
+	at com.stepdefenition.TC4_BookHotelStep.user_should_verify_success_message_after_booking_with_card_details_and_saves_the_order_id(TC4_BookHotelStep.java:35)
+	at &#10045;.User should verify success message after booking with card details &quot;Booking is Confirmed&quot; and saves the order id(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC4_BookHotel.feature:26)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">33.611</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel without special request using debit and credit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">4.148</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.528</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">2.105</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">17.441</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.043</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.222</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.021</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.757</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">2.991</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add gst details <span class="argument">&quot;9043592058&quot;</span>,<span class="argument">&quot;Greens Tech OMR Branch&quot;</span> and <span class="argument">&quot;Thoraipakkam&quot;</span></span>
+
+  <span class="lead-duration duration">0.742</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add without special request with gst</span>
+
+  <span class="lead-duration duration">0.097</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Debit Card&quot;</span></span>
+
+  <span class="lead-duration duration">1.440</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.069</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@class=&quot;couppon-code&quot;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [338efae4cceecbe01ea78652acd0f878, findElement {using=xpath, value=//h2[@class=&quot;couppon-code&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64941/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 338efae4cceecbe01ea78652acd0f878
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.pages.BookingConformPage.txtExpectedSuccessMsgBookingIsConformed(BookingConformPage.java:134)
+	at com.stepdefenition.TC4_BookHotelStep.user_should_verify_success_message_after_booking_with_card_details_and_saves_the_order_id(TC4_BookHotelStep.java:35)
+	at &#10045;.User should verify success message after booking with card details &quot;Booking is Confirmed&quot; and saves the order id(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC4_BookHotel.feature:56)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">34.881</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-10">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel without special request using debit and credit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">4.084</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.508</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">2.997</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">17.884</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.042</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.211</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.707</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">2.926</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add gst details <span class="argument">&quot;9043592058&quot;</span>,<span class="argument">&quot;Greens Tech OMR Branch&quot;</span> and <span class="argument">&quot;Thoraipakkam&quot;</span></span>
+
+  <span class="lead-duration duration">0.811</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User add without special request with gst</span>
+
+  <span class="lead-duration duration">0.095</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Credit Card&quot;</span></span>
+
+  <span class="lead-duration duration">1.527</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.067</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@class=&quot;couppon-code&quot;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73d0ff05cbd58a66010778471c394476, findElement {using=xpath, value=//h2[@class=&quot;couppon-code&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64983/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73d0ff05cbd58a66010778471c394476
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.pages.BookingConformPage.txtExpectedSuccessMsgBookingIsConformed(BookingConformPage.java:134)
+	at com.stepdefenition.TC4_BookHotelStep.user_should_verify_success_message_after_booking_with_card_details_and_saves_the_order_id(TC4_BookHotelStep.java:35)
+	at &#10045;.User should verify success message after booking with card details &quot;Booking is Confirmed&quot; and saves the order id(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC4_BookHotel.feature:56)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">58.081</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel without gst and with special request using debit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">4.444</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.430</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">2.207</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">40.254</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.064</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.150</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.802</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">2.899</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User giving  special request without gst <span class="argument">&quot;Camp Fire&quot;</span></span>
+
+  <span class="lead-duration duration">2.316</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Debit Card&quot;</span></span>
+
+  <span class="lead-duration duration">1.422</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.072</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@class=&quot;couppon-code&quot;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9f4f91d2a197a02a0d723364aa341195, findElement {using=xpath, value=//h2[@class=&quot;couppon-code&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65026}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65026/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f4f91d2a197a02a0d723364aa341195
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.pages.BookingConformPage.txtExpectedSuccessMsgBookingIsConformed(BookingConformPage.java:134)
+	at com.stepdefenition.TC4_BookHotelStep.user_should_verify_success_message_after_booking_with_card_details_and_saves_the_order_id(TC4_BookHotelStep.java:35)
+	at &#10045;.User should verify success message after booking with card details &quot;Booking is Confirmed&quot; and saves the order id(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC4_BookHotel.feature:84)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">32.417</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying book hotel without gst and without special request using credit card</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">3.370</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.493</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">2.022</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">17.784</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.054</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.204</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.797</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User add all guest details <span class="argument">&quot;Mr.&quot;</span>,<span class="argument">&quot;Akash&quot;</span>,<span class="argument">&quot;k a&quot;</span>,<span class="argument">&quot;8489608783&quot;</span> and <span class="argument">&quot;akashka888@gmail.com&quot;</span></span>
+
+  <span class="lead-duration duration">2.918</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user give without special request</span>
+
+  <span class="lead-duration duration">0.220</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user proceed payment <span class="argument">&quot;Debit Card&quot;</span></span>
+
+  <span class="lead-duration duration">1.458</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>SelecrtCard</td>
+                  <td>CardNumber</td>
+                  <td>NameOnCard</td>
+                  <td>SelectMonth</td>
+                  <td>SelectYear</td>
+                  <td>Cvv</td>
+              </tr>
+              <tr>
+                  <td>Debit Visa</td>
+                  <td>5555555555552222</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Amex</td>
+                  <td>5555555555552222</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Mastercard</td>
+                  <td>5555555555552222</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Debit Discover</td>
+                  <td>5555555555552222</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+              <tr>
+                  <td>Credit Visa</td>
+                  <td>5555555555552223</td>
+                  <td>Akash</td>
+                  <td>April</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Amex</td>
+                  <td>5555555555552223</td>
+                  <td>Ram</td>
+                  <td>May</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Mastercard</td>
+                  <td>5555555555552223</td>
+                  <td>Raj</td>
+                  <td>June</td>
+                  <td>2025</td>
+                  <td>233</td>
+              </tr>
+              <tr>
+                  <td>Credit Discover</td>
+                  <td>5555555555552223</td>
+                  <td>Mani</td>
+                  <td>July</td>
+                  <td>2025</td>
+                  <td>244</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after booking with card details <span class="argument">&quot;Booking is Confirmed&quot;</span> and saves the order id</span>
+
+  <span class="lead-duration duration">0.080</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@class=&quot;couppon-code&quot;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [719e07c9befe7b05c8437c00b99deeb6, findElement {using=xpath, value=//h2[@class=&quot;couppon-code&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65068/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 719e07c9befe7b05c8437c00b99deeb6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.getText(Unknown Source)
+	at com.pages.BookingConformPage.txtExpectedSuccessMsgBookingIsConformed(BookingConformPage.java:134)
+	at com.stepdefenition.TC4_BookHotelStep.user_should_verify_success_message_after_booking_with_card_details_and_saves_the_order_id(TC4_BookHotelStep.java:35)
+	at &#10045;.User should verify success message after booking with card details &quot;Booking is Confirmed&quot; and saves the order id(file:///C:/Users/ADMIN/eclipse-workspace/OmrBranchHotelAutomation/src/test/resources/Features/TC4_BookHotel.feature:111)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User should verify same selected hotel is booked</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2167957482.html">@BookHotel</a>
+</div>
+
+
+  <span class="lead-duration duration">29.547</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verifying Book hotel without entering any field</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is on OMRBranch hotel page</span>
+
+  <span class="lead-duration duration">3.585</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enter <span class="argument">&quot;akashka888@gmail.com&quot;</span> and <span class="argument">&quot;Akash@123&quot;</span></span>
+
+  <span class="lead-duration duration">2.441</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify success message after login <span class="argument">&quot;Welcome Akash&quot;</span></span>
+
+  <span class="lead-duration duration">2.310</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User search hotels <span class="argument">&quot;Tamil Nadu&quot;</span>,<span class="argument">&quot;Chennai&quot;</span>,<span class="argument">&quot;Studio&quot;</span>,<span class="argument">&quot;2023-05-29&quot;</span>,<span class="argument">&quot;2023-05-31&quot;</span>,<span class="argument">&quot;2-Two&quot;</span>,<span class="argument">&quot;2-Two&quot;</span> and <span class="argument">&quot;1&quot;</span></span>
+
+  <span class="lead-duration duration">17.975</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after search hotel success message <span class="argument">&quot;Select Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">0.052</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User select first hotel and save the hotel name and price</span>
+
+  <span class="lead-duration duration">0.334</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User accept the alert message</span>
+
+  <span class="lead-duration duration">0.029</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify after accepting the alert success message <span class="argument">&quot;Book Hotel&quot;</span></span>
+
+  <span class="lead-duration duration">1.996</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User book hotel without entering any feilds</span>
+
+  <span class="lead-duration duration">0.528</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User should verify error message after booking <span class="argument">&quot;Let us know for whom you are booking the hotel&quot;</span>,<span class="argument">&quot;Please select Salutation of the user&quot;</span>,<span class="argument">&quot;Please provide First Name of the user&quot;</span>,<span class="argument">&quot;Please provide Last Name of the user&quot;</span>,<span class="argument">&quot;Please provide Contact Number of the user to ease the communication (if required)&quot;</span> and <span class="argument">&quot;Please provide Email ID of the user to ease the communication (if required)&quot;</span></span>
+
+  <span class="lead-duration duration">0.290</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
